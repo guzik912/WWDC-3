@@ -23,7 +23,7 @@ body {
   width: 100%;
 }
 
-.header .nav-container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,7 +40,7 @@ body {
   padding: 20px 0;
 }
 
-.header .nav-container .header__logo {
+.header__container .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,11 +58,11 @@ body {
       align-self: center;
 }
 
-.header .nav-container .header__logo .header__logo-img {
+.header__container .header__logo-img {
   margin-right: 5px;
 }
 
-.header .nav-container .header__logo .header__logo-name {
+.header__container .header__logo-name {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -70,11 +70,11 @@ body {
   font-size: 1.5rem;
 }
 
-.header .nav-container .header__nav {
+.header__container .header__nav {
   padding: 10px 0;
 }
 
-.header .nav-container .header__nav ul {
+.header__container .header__nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,11 +92,11 @@ body {
   text-align: center;
 }
 
-.header .nav-container .header__nav ul li {
+.header__container .header__nav ul li {
   padding: 5px 0;
 }
 
-.header .nav-container .header__nav ul li a {
+.header__container .header__nav ul li a {
   display: block;
   color: #555;
   font-size: 1.3rem;
@@ -104,7 +104,7 @@ body {
   text-transform: uppercase;
 }
 
-.header .nav-container .header__nav ul li a:hover {
+.header__container .header__nav ul li a:hover {
   color: #64a764;
 }
 
@@ -126,7 +126,7 @@ body {
   background: url("../img/header-bg.jpg") no-repeat center/cover;
 }
 
-.header .header__banner .header__banner__title {
+.header .header__banner-title {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -136,13 +136,13 @@ body {
   text-align: center;
 }
 
-.header .header__banner .header__banner__desc {
+.header .header__banner-desc {
   font-size: 1.5rem;
   color: #64a764;
   margin: 30px 0;
 }
 
-.header .header__banner .header__banner__btn {
+.header .header__banner-btn {
   background-color: #76c476;
   color: #fff;
   border-radius: 50px;

@@ -10,8 +10,8 @@
     font-size: $font-heading;
 }
 
-@mixin flex-stack($display, $direction, $justify, $align) {
-    display: $display;
+@mixin flex-stack($justify, $align, $direction:row) {
+    display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
