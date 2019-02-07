@@ -24,3 +24,15 @@
     border-style: none;
     text-transform: uppercase;
 }
+
+@mixin mQ($resolution) {
+    @media screen and (min-width: $resolution) {
+        @content;
+    }
+}
+
+@mixin landmQ() {
+    @media screen and (orientation: landscape) {
+        @content;
+    }
+}

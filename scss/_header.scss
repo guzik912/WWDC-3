@@ -3,43 +3,72 @@
     margin: 0 auto;
 }
 
+
 .header {
     width: 100%;
+    @include flex-stack(flex-start, stretch, column);
+    padding: 20px 0;
 
-    &__container {
-        @include flex-stack(space-between, stretch, column);
-        padding: 20px 0;
 
-        .header__logo {
-            @include flex-stack(flex-start, center);
-            align-self: center;
+    .logo {
+        @include flex-stack(center, center);
 
-            &-img {
-                margin-right: 5px;
-            }
-
-            &-name {
-                @include section-heading(map-get($colors, btn), 1.5rem);
-            }
+        &__img {
+            margin-right: 5px;
         }
 
-        .header__nav {
-            padding: 10px 0;
+        &__name {
+            @include section-heading(map-get($colors, btn), 1.5rem);
 
-            ul {
+            @include mQ(411px) {
+                font-size: 2.3rem;
+            }
+
+            @include mQ(768px) {
+                font-size: 3.3rem;
+            }
+        }
+    }
+
+
+    &__menu {
+        padding: 10px 0;
+
+        .menu {
+            &__list {
                 @include flex-stack(space-between, stretch, column);
                 list-style: none;
-                text-align: center;
 
-                li {
+                @include mQ(1280px) {
+                    @include flex-stack(space-around, center);
+                    padding: 20px 0;
+                }
+
+                .menu__item {
                     padding: 5px 0;
+                    text-align: center;
 
-                    a {
+                    .menu__link {
                         display: block;
                         color: map-get($colors, desc);
                         font-size: 1.3rem;
                         text-decoration: none;
                         text-transform: uppercase;
+
+                        @include mQ(411px) {
+                            font-size: 1.6rem;
+                            line-height: 2.5rem;
+                        }
+
+                        @include mQ(768px) {
+                            font-size: 2.2rem;
+                            line-height: 3rem;
+                        }
+
+                        @include mQ(1024px) {
+                            font-size: 2.5rem;
+                            line-height: 3.2rem;
+                        }
 
                         &:hover {
                             color: map-get($colors, extra);
@@ -47,30 +76,6 @@
                     }
                 }
             }
-        }
-    }
-
-    .header__banner {
-        height: 50vh;
-        @include flex-stack(center, center, column);
-        background: url('../img/header-bg.jpg') no-repeat center/cover;
-
-        &-title {
-            @include section-heading(map-get($colors, secondary), 2.8rem);
-            width: 50%;
-            text-align: center;
-        }
-
-        &-desc {
-            font-size: 1.5rem;
-            color: map-get($colors, extra);
-            margin: 30px 0;
-        }
-
-        &-btn {
-            @include btn-stack();
-            padding: 10px 15px;
-            font-size: .8rem;
         }
     }
 }

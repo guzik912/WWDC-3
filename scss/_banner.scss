@@ -1,0 +1,64 @@
+.banner-main {
+    background: url('../img/header-bg.jpg') no-repeat center/cover;
+}
+
+.banner {
+    height: 50vh;
+    @include flex-stack(center, center, column);
+
+
+    @include landmQ() {
+        height: 70vh;
+    }
+
+    &__title {
+        @include section-heading(map-get($colors, secondary), 2.8rem);
+        width: 80%;
+        text-align: center;
+
+        @include mQ(411px) {
+            font-size: 3.3rem;
+            line-height: 4.2rem;
+        }
+
+        @include mQ(768px) {
+            font-size: 4.5rem;
+            line-height: 5.3rem;
+        }
+    }
+
+    &__desc {
+        font-size: 1.5rem;
+        color: map-get($colors, extra);
+        margin: 30px 0;
+
+        @include mQ(768px) {
+            font-size: 2rem;
+        }
+    }
+
+    &__btn {
+        @include btn-stack();
+        padding: 10px 15px;
+        font-size: .8rem;
+
+        @include mQ(411px) {
+            font-size: 1rem;
+        }
+
+        @include mQ(768px) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// .banner-container {
+//     @include flex-stack(flex-start, center);
+
+//     .split-img {
+//         flex-basis: 20%;
+//     }
+
+//     .banner.split {
+//         flex-basis: 50%;
+//     }
