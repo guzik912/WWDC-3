@@ -12,6 +12,7 @@
 
         @include mQ(1024px) {
             font-size: 3.8rem;
+            padding-top: 50px;
         }
     }
 
@@ -36,13 +37,14 @@
     @include flex-stack(space-around, center, column);
 
     @include mQ(1024px) {
-        @include flex-stack(space-around, center);
+        @include flex-stack(center, center);
+        max-width: 1080px;
+        margin: 0 auto;
     }
 
     .content__box {
         @include flex-stack(space-between, center, column);
         padding: 20px 0;
-        flex-basis: 33.3%;
 
         .img-container {
 
@@ -61,7 +63,8 @@
             }
 
             @include mQ(1024px) {
-                font-size: 2.6rem;
+                font-size: 2rem;
+                padding-top: 40px;
             }
         }
 
@@ -73,11 +76,12 @@
 
 
             @include mQ(768px) {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
 
             @include mQ(1024px) {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
+                width: 80%;
 
             }
         }

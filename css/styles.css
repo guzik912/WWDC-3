@@ -38,6 +38,23 @@ body {
   padding: 20px 0;
 }
 
+@media screen and (min-width: 1280px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,8 +95,20 @@ body {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header .logo__name {
+    font-size: 2.4rem;
+  }
+}
+
 .header__menu {
   padding: 10px 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .header__menu {
+    width: 50%;
+  }
 }
 
 .header__menu .menu__list {
@@ -151,6 +180,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .header__menu .menu__list .menu__item .menu__link {
+    font-size: 2rem;
+  }
+}
+
 .header__menu .menu__list .menu__item .menu__link:hover {
   color: #64a764;
 }
@@ -208,7 +243,7 @@ body {
 
 .banner__desc {
   font-size: 1.5rem;
-  color: #64a764;
+  color: #aaa;
   margin: 30px 0;
 }
 
@@ -240,6 +275,73 @@ body {
   }
 }
 
+.gear {
+  width: 100%;
+}
+
+.gear .img-container {
+  display: none;
+}
+
+.gear .banner-gear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background: url("../img/section-gear-image.jpg") no-repeat center/cover;
+  padding: 40px 30px;
+  height: 70vh;
+}
+
+.gear .banner-gear .banner__title {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.gear .banner-gear .banner__title .green-letter {
+  color: #64a764;
+}
+
+.gear .banner-gear .banner__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 5px 0;
+  width: 80%;
+}
+
+.gear .banner-gear .banner__desc .checkmark-img {
+  margin-right: 10px;
+}
+
+.gear .banner-gear .banner__btn {
+  margin-top: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .section__header {
   padding: 30px 0;
   text-align: center;
@@ -263,11 +365,12 @@ body {
 @media screen and (min-width: 1024px) {
   .section__header .section__title {
     font-size: 3.8rem;
+    padding-top: 50px;
   }
 }
 
 .section__header .section__subtitle {
-  color: #555;
+  color: #aaa;
   font-size: 1.2rem;
   line-height: 2rem;
 }
@@ -310,11 +413,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
   }
 }
 
@@ -333,8 +439,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 0;
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
 }
 
 .section__content .content__box .img-container .content__img {
@@ -359,12 +463,13 @@ body {
 
 @media screen and (min-width: 1024px) {
   .section__content .content__box .content__title {
-    font-size: 2.6rem;
+    font-size: 2rem;
+    padding-top: 40px;
   }
 }
 
 .section__content .content__box .content__subtitle {
-  color: #555;
+  color: #aaa;
   width: 60%;
   font-size: 1.2rem;
   text-align: center;
@@ -372,13 +477,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .section__content .content__box .content__subtitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .section__content .content__box .content__subtitle {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
