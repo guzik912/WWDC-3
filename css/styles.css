@@ -450,19 +450,16 @@ img {
       align-self: center;
 }
 
-.services,
-.project {
+.section {
   width: 100%;
 }
 
-.services .section__header,
-.project .section__header {
+.section__header {
   padding: 30px 0;
   text-align: center;
 }
 
-.services .section__header .section__title,
-.project .section__header .section__title {
+.section__title {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -472,45 +469,39 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .services .section__header .section__title,
-  .project .section__header .section__title {
+  .section__title {
     font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .services .section__header .section__title,
-  .project .section__header .section__title {
+  .section__title {
     font-size: 3.8rem;
     padding-top: 50px;
   }
 }
 
-.services .section__header .section__subtitle,
-.project .section__header .section__subtitle {
+.section__subtitle {
   color: #aaa;
   font-size: 1.2rem;
   line-height: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .services .section__header .section__subtitle,
-  .project .section__header .section__subtitle {
+  .section__subtitle {
     font-size: 1.8rem;
     line-height: 2.6rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .services .section__header .section__subtitle,
-  .project .section__header .section__subtitle {
+  .section__subtitle {
     font-size: 2.4rem;
     line-height: 5rem;
   }
 }
 
-.services .section__content,
-.project .section__content {
+.section__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,8 +518,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .services .section__content,
-  .project .section__content {
+  .section__body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -548,8 +538,7 @@ img {
   }
 }
 
-.services .section__content .content__box,
-.project .section__content .content__box {
+.section__body .content__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,13 +555,11 @@ img {
   padding: 20px 0;
 }
 
-.services .section__content .content__box .img-container .content__img,
-.project .section__content .content__box .img-container .content__img {
+.section__body .content__box .img-container .content__img {
   width: 100%;
 }
 
-.services .section__content .content__box .content__title,
-.project .section__content .content__box .content__title {
+.section__body .content__box .content__title {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -583,22 +570,19 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .services .section__content .content__box .content__title,
-  .project .section__content .content__box .content__title {
+  .section__body .content__box .content__title {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .services .section__content .content__box .content__title,
-  .project .section__content .content__box .content__title {
+  .section__body .content__box .content__title {
     font-size: 2rem;
     padding-top: 40px;
   }
 }
 
-.services .section__content .content__box .content__subtitle,
-.project .section__content .content__box .content__subtitle {
+.section__body .content__box .content__subtitle {
   color: #aaa;
   width: 60%;
   font-size: 1.2rem;
@@ -606,39 +590,37 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .services .section__content .content__box .content__subtitle,
-  .project .section__content .content__box .content__subtitle {
+  .section__body .content__box .content__subtitle {
     font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .services .section__content .content__box .content__subtitle,
-  .project .section__content .content__box .content__subtitle {
+  .section__body .content__box .content__subtitle {
     font-size: 1.8rem;
     width: 80%;
   }
 }
 
-.project {
+.seection-project {
   background: url(../img/ipad.png) no-repeat center 100%/80%;
 }
 
 @media screen and (orientation: landscape) {
-  .project {
+  .seection-project {
     background-position: 150% 80%;
     background-size: 60%;
   }
 }
 
 @media screen and (orientation: landscape) and (min-width: 1400px) {
-  .project {
+  .seection-project {
     background-position: 100% 100%;
     background-size: 50%;
   }
 }
 
-.project .section__content {
+.seection-project .section__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,7 +639,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .project .section__content {
+  .seection-project .section__body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -675,7 +657,7 @@ img {
 }
 
 @media screen and (orientation: landscape) {
-  .project .section__content {
+  .seection-project .section__body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -692,34 +674,34 @@ img {
   }
 }
 
-.project .section__content .content__header {
+.seection-project .section__body .content__header {
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  .project .section__content .content__header {
+  .seection-project .section__body .content__header {
     text-align: left;
   }
 }
 
 @media screen and (orientation: landscape) {
-  .project .section__content .content__header {
+  .seection-project .section__body .content__header {
     text-align: left;
   }
 }
 
-.project .section__content .content__header .content__title {
+.seection-project .section__body .content__header .content__title {
   padding-bottom: 10px;
   font-size: 1.8rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .project .section__content .content__header .content__subtitle {
+  .seection-project .section__body .content__header .content__subtitle {
     font-size: 1.6rem;
   }
 }
 
-.project .section__content .content__desc {
+.seection-project .section__body .content__desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -737,7 +719,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .project .section__content .content__desc {
+  .seection-project .section__body .content__desc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -757,7 +739,7 @@ img {
 }
 
 @media screen and (orientation: landscape) {
-  .project .section__content .content__desc {
+  .seection-project .section__body .content__desc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -776,16 +758,16 @@ img {
   }
 }
 
-.project .section__content .content__desc .content__img {
+.seection-project .section__body .content__desc .content__img {
   padding: 10px 0;
   height: 100%;
 }
 
-.project .section__content .content__desc .desc-container {
+.seection-project .section__body .content__desc .desc-container {
   margin-left: 10px;
 }
 
-.project .section__content .content__desc .desc-container .content__title {
+.seection-project .section__body .content__desc .desc-container .content__title {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -794,42 +776,42 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .project .section__content .content__desc .desc-container .content__title {
+  .seection-project .section__body .content__desc .desc-container .content__title {
     font-size: 1.6rem;
   }
 }
 
-.project .section__content .content__desc .desc-container .content__subtitle {
+.seection-project .section__body .content__desc .desc-container .content__subtitle {
   color: #aaa;
   font-size: 1.2rem;
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  .project .section__content .content__desc .desc-container .content__subtitle {
+  .seection-project .section__body .content__desc .desc-container .content__subtitle {
     text-align: left;
     font-size: 1.4rem;
   }
 }
 
 @media screen and (orientation: landscape) {
-  .project .section__content .content__desc .desc-container .content__subtitle {
+  .seection-project .section__body .content__desc .desc-container .content__subtitle {
     text-align: left;
   }
 }
 
-.project .section__content .content__subtitle {
+.seection-project .section__body .content__subtitle {
   color: #aaa;
   font-size: 1.2rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .project .section__content .content__subtitle {
+  .seection-project .section__body .content__subtitle {
     font-size: 1.6rem;
   }
 }
 
-.project .section__content .link-container {
+.seection-project .section__body .link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,7 +829,7 @@ img {
   padding-top: 20px;
 }
 
-.project .section__content .link-container .project-link {
+.seection-project .section__body .link-container .project-link {
   color: #64a764;
   text-decoration: none;
   font-size: 1.4rem;
@@ -856,7 +838,7 @@ img {
   padding-bottom: 10px;
 }
 
-.project .section__content .link-container .project-link::after {
+.seection-project .section__body .link-container .project-link::after {
   content: '';
   display: block;
   width: 100%;
@@ -867,17 +849,17 @@ img {
   left: 0;
 }
 
-.project .section__content .link-container .project-link:hover {
+.seection-project .section__body .link-container .project-link:hover {
   color: #3c8b3c;
 }
 
 @media screen and (min-width: 1024px) {
-  .project .section__content .link-container .project-link {
+  .seection-project .section__body .link-container .project-link {
     font-size: 2.4rem;
   }
 }
 
-.project .section__content .link-container .arrow {
+.seection-project .section__body .link-container .arrow {
   height: 1.2rem;
   margin-left: 5px;
 }
