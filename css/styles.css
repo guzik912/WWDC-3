@@ -602,25 +602,25 @@ img {
   }
 }
 
-.seection-project {
+.project {
   background: url(../img/ipad.png) no-repeat center 100%/80%;
 }
 
 @media screen and (orientation: landscape) {
-  .seection-project {
+  .project {
     background-position: 150% 80%;
     background-size: 60%;
   }
 }
 
 @media screen and (orientation: landscape) and (min-width: 1400px) {
-  .seection-project {
+  .project {
     background-position: 100% 100%;
     background-size: 50%;
   }
 }
 
-.seection-project .section__body {
+.project .section__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,7 +639,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .seection-project .section__body {
+  .project .section__body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -657,7 +657,7 @@ img {
 }
 
 @media screen and (orientation: landscape) {
-  .seection-project .section__body {
+  .project .section__body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -674,34 +674,34 @@ img {
   }
 }
 
-.seection-project .section__body .content__header {
+.project .section__body .content__header {
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  .seection-project .section__body .content__header {
+  .project .section__body .content__header {
     text-align: left;
   }
 }
 
 @media screen and (orientation: landscape) {
-  .seection-project .section__body .content__header {
+  .project .section__body .content__header {
     text-align: left;
   }
 }
 
-.seection-project .section__body .content__header .content__title {
+.project .section__body .content__header .content__title {
   padding-bottom: 10px;
   font-size: 1.8rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .seection-project .section__body .content__header .content__subtitle {
+  .project .section__body .content__header .content__subtitle {
     font-size: 1.6rem;
   }
 }
 
-.seection-project .section__body .content__desc {
+.project .section__body .content__desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,7 +719,7 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .seection-project .section__body .content__desc {
+  .project .section__body .content__desc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -739,7 +739,7 @@ img {
 }
 
 @media screen and (orientation: landscape) {
-  .seection-project .section__body .content__desc {
+  .project .section__body .content__desc {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -758,16 +758,16 @@ img {
   }
 }
 
-.seection-project .section__body .content__desc .content__img {
+.project .section__body .content__desc .content__img {
   padding: 10px 0;
   height: 100%;
 }
 
-.seection-project .section__body .content__desc .desc-container {
+.project .section__body .content__desc .desc-container {
   margin-left: 10px;
 }
 
-.seection-project .section__body .content__desc .desc-container .content__title {
+.project .section__body .content__desc .desc-container .content__title {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
@@ -776,42 +776,42 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .seection-project .section__body .content__desc .desc-container .content__title {
+  .project .section__body .content__desc .desc-container .content__title {
     font-size: 1.6rem;
   }
 }
 
-.seection-project .section__body .content__desc .desc-container .content__subtitle {
+.project .section__body .content__desc .desc-container .content__subtitle {
   color: #aaa;
   font-size: 1.2rem;
   text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
-  .seection-project .section__body .content__desc .desc-container .content__subtitle {
+  .project .section__body .content__desc .desc-container .content__subtitle {
     text-align: left;
     font-size: 1.4rem;
   }
 }
 
 @media screen and (orientation: landscape) {
-  .seection-project .section__body .content__desc .desc-container .content__subtitle {
+  .project .section__body .content__desc .desc-container .content__subtitle {
     text-align: left;
   }
 }
 
-.seection-project .section__body .content__subtitle {
+.project .section__body .content__subtitle {
   color: #aaa;
   font-size: 1.2rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .seection-project .section__body .content__subtitle {
+  .project .section__body .content__subtitle {
     font-size: 1.6rem;
   }
 }
 
-.seection-project .section__body .link-container {
+.project .section__body .link-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,7 +829,7 @@ img {
   padding-top: 20px;
 }
 
-.seection-project .section__body .link-container .project-link {
+.project .section__body .link-container .project-link {
   color: #64a764;
   text-decoration: none;
   font-size: 1.4rem;
@@ -838,7 +838,7 @@ img {
   padding-bottom: 10px;
 }
 
-.seection-project .section__body .link-container .project-link::after {
+.project .section__body .link-container .project-link::after {
   content: '';
   display: block;
   width: 100%;
@@ -849,18 +849,118 @@ img {
   left: 0;
 }
 
-.seection-project .section__body .link-container .project-link:hover {
+.project .section__body .link-container .project-link:hover {
   color: #3c8b3c;
 }
 
 @media screen and (min-width: 1024px) {
-  .seection-project .section__body .link-container .project-link {
+  .project .section__body .link-container .project-link {
     font-size: 2.4rem;
   }
 }
 
-.seection-project .section__body .link-container .arrow {
+.project .section__body .link-container .arrow {
   height: 1.2rem;
   margin-left: 5px;
+}
+
+.culture {
+  background-color: #eee;
+}
+
+.culture .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .culture .container {
+    width: 30%;
+  }
+}
+
+.culture .culture__title {
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #111;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .culture .culture__title {
+    font-size: 1.8rem;
+  }
+}
+
+.culture .culture__desc {
+  color: #aaa;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .culture .culture__desc {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+}
+
+.culture .line-right {
+  position: relative;
+}
+
+.culture .line-left {
+  position: relative;
+}
+
+.culture .line-left::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background-color: black;
+  top: 20%;
+  left: -20%;
+  z-index: 10;
+}
+
+.culture .line-right::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background-color: black;
+  top: 20%;
+  right: -20%;
+  z-index: 10;
+}
+
+.culture .section__body div:nth-child(2)::after {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .culture .section__body div:nth-child(2)::after {
+    display: block;
+  }
+  .culture .section__body div:nth-child(1)::after {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

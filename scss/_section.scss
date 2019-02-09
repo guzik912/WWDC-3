@@ -95,7 +95,7 @@
     }
 }
 
-.seection-project {
+.project {
     background: url(../img/ipad.png) no-repeat center 100%/80%;
 
 
@@ -248,21 +248,88 @@
             }
         }
     }
+}
+
+.culture {
+    background-color: #eee;
+
+    .container {
+        @include flex-stack(flex-start, center, column);
+        width: 70%;
+        padding-bottom: 30px;
+
+        @include mQ(1024px) {
+            width: 30%;
+        }
+
+    }
+
+    .culture__title {
+        padding: 10px 0;
+        @include section-heading(map-get($colors, primary), 1.4rem);
+
+        @include mQ(1024px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    .culture__desc {
+        color: map-get($colors, desc);
+        text-align: center;
+
+        @include mQ(1024px) {
+            width: 80%;
+            font-size: 1.4rem;
+        }
+    }
+
+    .line-right {
+        position: relative;
+    }
+
+    .line-left {
+        position: relative;
+    }
+
+    .line-left::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        background-color: black;
+        top: 20%;
+        left: -20%;
+        z-index: 10;
+    }
+
+    .line-right::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 40%;
+        height: 2px;
+        background-color: black;
+        top: 20%;
+        right: -20%;
+        z-index: 10;
+    }
 
 
+    .section__body div:nth-child(2)::after {
+        display: none;
+    }
 
+    @include mQ(1024px) {
+        .section__body div:nth-child(2)::after {
+            display: block;
+        }
 
+        .section__body div:nth-child(1)::after {
+            display: none;
+        }
 
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 }
