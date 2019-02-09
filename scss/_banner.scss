@@ -39,8 +39,20 @@
         }
     }
 
-    &__btn {
+    .btn {
         @include btn-stack();
+
+        &:hover {
+            background-color: #58b358;
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline-style: none;
+        }
+    }
+
+    &__btn {
         padding: 10px 15px;
         font-size: .8rem;
 
@@ -57,19 +69,57 @@
 .gear {
     width: 100%;
 
-    .gear-container {
+    @include mQ(1024px) {
+        @include flex-stack(flex-start, stretch);
+    }
+
+    .gear-img-container {
         display: none;
+        position: relative;
+        background-color: #eee;
+        z-index: -1;
 
         .gear__img {
             max-width: 100%;
+            transform: translate(50%, 50%);
+            width: 100%;
+        }
+
+        @include mQ(1024px) {
+            display: block;
         }
     }
 
     .banner-gear {
-        @include flex-stack(flex-start, stretch, column);
+        @include flex-stack(center, stretch, column);
         background: url('../img/section-gear-image.jpg') no-repeat center/cover;
         padding: 40px 30px;
-        height: 70vh;
+        height: 90vh;
+
+        @include mQ(360px) {
+            height: 70vh;
+        }
+
+        @include mQ(768px) {
+            height: 60vh;
+        }
+
+        @include mQ(1024px) {
+            height: 70vh;
+            @include flex-stack(center, stretch, column);
+        }
+
+        @include mQboth(1024px, 1366px) {
+            height: 50vh;
+        }
+
+        @include landmQboth(400px) {
+            height: 125vh;
+        }
+
+        @include landmQboth(1024px) {
+            height: 100vh;
+        }
 
         .banner__title {
             text-align: left;
@@ -87,9 +137,16 @@
             margin: 5px 0;
             width: 80%;
 
+            @include mQ(1024px) {
+                font-size: 2rem;
+                margin: 15px 0;
+            }
+
+
             .checkmark-img {
                 margin-right: 10px;
             }
+
         }
 
         .banner__btn {

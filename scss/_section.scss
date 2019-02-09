@@ -1,4 +1,5 @@
-.services {
+.services,
+.project {
     width: 100%;
 
     .section__header {
@@ -38,11 +39,13 @@
 
     .section__content {
         @include flex-stack(space-around, center, column);
+        padding-bottom: 30px;
 
         @include mQ(1024px) {
             @include flex-stack(center, center);
             max-width: 1080px;
             margin: 0 auto;
+            padding-bottom: 50px;
         }
 
         .content__box {
@@ -90,4 +93,176 @@
             }
         }
     }
+}
+
+.project {
+    background: url(../img/ipad.png) no-repeat center 100%/80%;
+
+
+    @include landmQ() {
+        background-position: 150% 80%;
+        background-size: 60%;
+    }
+
+    @include landmQboth(1400px) {
+        background-position: 100% 100%;
+        background-size: 50%;
+    }
+
+    .section__content {
+        @include flex-stack(flex-start, center, column);
+        width: 80%;
+        margin: auto;
+
+        @include mQ(1024px) {
+            @include flex-stack(flex-start, flex-start, column);
+        }
+
+        @include landmQ() {
+            @include flex-stack(flex-start, flex-start, column);
+        }
+
+        .content__header {
+            text-align: center;
+
+            @include mQ(1024px) {
+                text-align: left;
+            }
+
+            @include landmQ() {
+                text-align: left;
+            }
+
+            .content__title {
+                padding-bottom: 10px;
+                font-size: 1.8rem;
+
+            }
+
+            .content__subtitle {
+                @include mQ(1024px) {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .content__desc {
+            @include flex-stack(flex-start, center, column);
+            padding: 20px 0;
+
+            @include mQ(1024px) {
+                @include flex-stack(flex-start, center);
+                padding: 10px 0;
+                width: 50%;
+            }
+
+            @include landmQ() {
+                @include flex-stack(flex-start, center);
+                padding: 10px 0;
+                width: 60%;
+            }
+
+            .content__img {
+                padding: 10px 0;
+                height: 100%;
+            }
+
+            .desc-container {
+                margin-left: 10px;
+
+                .content__title {
+                    @include section-heading(map-get($colors, primary), 1.4rem);
+
+                    @include mQ(1024px) {
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .content__subtitle {
+                    color: map-get($colors, desc);
+                    font-size: 1.2rem;
+                    text-align: center;
+
+                    @include mQ(1024px) {
+                        text-align: left;
+                        font-size: 1.4rem;
+                    }
+
+                    @include landmQ() {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+
+        .content__subtitle {
+            color: map-get($colors, desc);
+            font-size: 1.2rem;
+
+            @include mQ(1024px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        .link-container {
+            @include flex-stack(flex-start, center);
+            width: 100%;
+            padding-top: 20px;
+            // position: relative;
+
+
+
+            .project-link {
+                color: map-get($colors, extra);
+                text-decoration: none;
+                font-size: 1.4rem;
+                position: relative;
+                overflow: hidden;
+                padding-bottom: 10px;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #58b358;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                &:hover {
+                    color: #3c8b3c;
+                }
+
+
+                @include mQ(1024px) {
+                    font-size: 2.4rem;
+                }
+            }
+
+            .arrow {
+                height: 1.2rem;
+                margin-left: 5px;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

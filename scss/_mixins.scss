@@ -31,8 +31,21 @@
     }
 }
 
+@mixin mQboth($width, $height) {
+    @media screen and (min-width: $width) and (min-height:$height) {
+        @content;
+    }
+}
+
 @mixin landmQ() {
     @media screen and (orientation: landscape) {
+        @content;
+    }
+}
+
+
+@mixin landmQboth($width) {
+    @media screen and (orientation: landscape) and (min-width:$width) {
         @content;
     }
 }
